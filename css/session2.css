@@ -1,0 +1,28 @@
+body{
+    background-color: #fafafa;
+    /*background-image: url("../imgs/anh1.jpeg");
+    background-repeat: no-repeat;/*repeat-x repeat-y*/
+    background-size:cover;
+    text-align: center;
+}
+h1{
+    color: rgb(137, 76, 236);/* rgba(150, 50, 255, 0.8)*/
+    font-size: 50px;
+    line-height: 1.5;/*75px*/
+    text-align: center;
+}
+p{
+    color: #083f5d;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;/*center left right */
+    width: 800px;
+    text-transform: none;/*uppercase lowercase capitalize*/
+    text-decoration: none;/* overline line-through underline*/
+    font-family: Arial;/*default la Time new roman*/
+    font-weight: 700;/*thin-100 light-300 normal-400 medium-500 semi-bold-600 bold-700 extra-bold-800 black-900*/
+    background-color: #c6c4c4;
+}
+img{
+    max-width:100%;
+}
