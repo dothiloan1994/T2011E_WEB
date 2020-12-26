@@ -10,13 +10,14 @@ h1{
     font-size: 50px;
     line-height: 1.5;/*75px*/
     text-align: center;
+    border-bottom: 5px solid green;/*dotted dashed*/
 }
 p{
     color: #083f5d;
     font-size: 14px;
     line-height: 1.5;
     text-align: justify;/*center left right */
-    width: 800px;
+    /*width: 800px;*/
     text-transform: none;/*uppercase lowercase capitalize*/
     text-decoration: none;/* overline line-through underline*/
     font-family: Arial;/*default la Time new roman*/

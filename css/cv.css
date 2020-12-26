@@ -1,0 +1,30 @@
+body{
+    background-color:#fafafa;
+    margin-left:15%;
+    margin-right:15%;
+}
+p{
+    color:black;
+    font-size:14px;
+    line-height:1.5;
+    text-align:justify;
+    font-family:Arial;
+    border-bottom: 1px dashed darkred;
+}
+h6{
+    color:darkred;
+    text-decoration:underline;
+    font-size:14px;
+    line-height:1;
+    font-family:Arial;
+    font-weight:600;
+    font-style: italic;
+    margin-top:1px;
+    margin-bottom: 5px;
+}
+img{
+    max-height:200px;
+}
+td{
+    width:200px;
+}
