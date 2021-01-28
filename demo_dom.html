@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo DOM</title>
+    <link rel="stylesheet" href="css/demo_dom.css">
+</head>
+<body>
+    <h1 id="heading">10:00</h1>
+<script type = "text/javascript">
+    var h = document.getElementById("heading");
+
+    //setInterval(function(){
+      //  if(h.innerText=="Xin chao")
+        //    h.innerText = "Xin chao cac ban";
+        //else
+          //  h.innerText = "Xin chao";
+    //},3000);
+
+    //ngoac don hay kep deu y nghia nhu nhau
+   // setTimeout(function(){
+     //   h.innerHTML = '<p>Xin chao các bạn</p>';
+    //},3000);
+  //  h.style.color = "orange";
+    //h.style.fontSize = "50px";
+
+    var minu=10;
+    var second=0;
+    var runTime = setInterval(stopTime,1000);
+    function stopTime(){
+        if(minu==0&second==0){
+            clearInterval(runTime);
+            alert("Stopped Time");
+        }else {
+            if (second == 0) {
+                second = 59;
+                minu = minu - 1;
+            } else {
+                second = second - 1;
+            }
+            if (second <= 9) {
+                h.innerHTML = "0" + minu + ":" + "0" + second;
+            } else {
+                h.innerHTML = "0" + minu + ":" + second;
+            }
+        }
+    };
+</script>
+</body>
+</html>

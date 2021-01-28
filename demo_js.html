@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS</title>
+
+</head>
+<body>
+    <script type="text/javascript" src="js/demojs.js"></script>
+    <script type="text/javascript">
+        var gt=tinhgiaithua(3);
+        console.log(gt);
+        var x;
+        x=10;
+        x++;
+        x+=10;
+        console.log(x);
+        x="hello world";
+        console.log(x);
+        var t= 18;
+        if(t>18){
+            console.log("chuc mung ban da truong thanh");
+        } else{
+            console.log("cam nguoi duoi 18 tuoi");
+        }
+        switch (t){
+            case 18: console.log("chuc mung ban da truong thanh");
+                break;
+            default: console.log("cam nguoi duoi 18 tuoi");
+        }
+        if(t>18){
+
+        }else if(t==18){
+
+        }else{
+
+        }
+        for(var i=0;i<15;i++){
+            console.log(i);
+        }
+        var arr;
+        arr =[];
+        arr[0]=1;
+        arr[1]=15;
+        arr[2]="xin chao";
+        arr[3]=[];
+        arr[3][0]=1;
+        arr[3][1]=1;
+        arr[3][2]="xjnc";
+        var ar2=[];
+        ar2.push(19);
+        ar2.push(5);
+        ar2.push("xin chao");
+        var ar3=[];
+        for(var i=0;i<10;i++){
+            ar3.push(i+15);
+        }
+        ar3.push(77);
+
+        inketqua(6,9);
+        var k = tinhtong(10,12);
+        console.log("tong: "+k);
+
+        // khai bao ham
+        function tinhtong(a,b){
+             var c = a+b;
+             return c;
+        }
+        function inketqua(a,b){
+            console.log(a+b);
+        }
+        //alert("Cam tre em duoi 18 tuoi");// tra ve void
+        //confirm("Ban da chac chan");// tra ve true false
+        //prompt("Nhap ten nguoi dung");//tra ve string
+        setTimeout(function(){
+            alert("xinchao, xuat hien sau 3s");
+        },3000);
+        var c = 0;
+        var si = setInterval(function(){
+            c++;
+            alert("xua hien sau 3s");
+            if(c>3){
+                clearInterval(si);
+            }
+        },3000);
+        //
+    </script>
+</body>
+</html>

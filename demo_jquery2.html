@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jquery</title>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+
+</head>
+<body>
+<section class="col-md-12">
+    <div class="container">
+        <button type="button" class="btn btn-default" onclick="showOn()">ON</button>
+        <button type="button" class="btn btn-default" onclick="showOff()">OFF</button>
+        <button type="button" class="btn btn-default onoff">ON/OFF</button>
+    </div>
+</section>
+<section class="col-md-12">
+    <div class="container">
+        <form action ="#" method="get" class="login">
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" name="email" placeholder="Email"/>
+            </div>
+            <div class="form-group">
+                <label>Username</label>
+                <input class="form-control" name="username" placeholder="Username"/>
+            </div>
+
+        </form>
+    </div>
+</section>
+<section class="col-md-12">
+    <div class="container">
+        <h1>Stop Watch</h1>
+        <button type="button" class="btn btn-default start">START</button>
+        <button type="button" class="btn btn-default pause">PAUSE</button>
+        <button type="button" class="btn btn-default stop">STOP</button>
+        <h2><span class="minu">10</span>:<span class="sec">00</span></h2>
+    </div>
+</section>
+<script src="libs/jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+    function showOn(){
+        //var lg = $(".login");
+        // lg.show();
+        // lg.fadeIn();
+        // lg.slideDown();
+    }
+    var flag=true;
+    var onOff = $(".onoff");
+    onOff.bind("click",showOnOff);
+    function showOff(){
+         //var lg = $(".login");
+        //lg.hide();
+        // lg.fadeOut();
+        // lg.slideUp();
+        // lg.toggle();
+        // lg.fadeToggle();
+        // lg.slideToggle();
+    }
+    function showOnOff(){
+        var lg = $(".login");
+        if(flag) {
+            lg.animate({
+                "margin": "200px"
+            }, 400);
+            flag=false;
+        }else{
+            lg.animate({
+                "margin": "0px"
+            }, 400);
+            flag=true;
+        }
+    }
+
+    var m = 10;
+    var s = 0;
+    var min = $(".minu");
+    var sec = $(".sec");
+    var timer = null;
+    var reset = false;
+    function runStart(){
+        if(timer==null) {
+            timer = setInterval(startWatch, 1000);
+        }
+    }
+    function startWatch(){
+        if(reset==true){
+            m = 10;
+            s = 0;
+            min.text("10");
+            sec.text("00");
+            reset = false;
+        }
+        if(reset==false) {
+            if (s == 0) {
+                m--;
+                s = 59;
+            } else {
+                s--;
+            }
+            if (m < 0) {
+                clearInterval(timer);
+            } else {
+                if (m >= 10) {
+                    min.text(m);
+                } else {
+                    min.text("0" + m);
+                }
+                if (s >= 10) {
+                    sec.text(s);
+                } else {
+                    sec.text("0" + s);
+                }
+            }
+        }
+    }
+    var start = $(".start");
+    start.bind("click",runStart);
+    var pause = $(".pause");
+    pause.bind("click",pauseWatch);
+    function pauseWatch(){
+        if(timer!=null){
+            clearInterval(timer);
+            timer=null;
+        }
+    }
+    var stop = $(".stop");
+    stop.bind("click",stopWatch);
+    function stopWatch(){
+        min.text("00");
+        sec.text("00");
+        m = 0;
+        s = 0;
+        clearInterval(timer);
+        timer = null;
+        reset = true;
+    }
+</script>
+</body>
+</html>

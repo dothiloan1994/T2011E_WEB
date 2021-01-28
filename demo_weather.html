@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo weather</title>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/demo_weather.css">
+</head>
+<body>
+    <section class="col-md-12">
+       <div class="container">
+           <div class="col-md-3">
+               <select class="form-control" name="city">
+                   <option selected value="ha noi,vn">Ha noi</option>
+                   <option value="saigon,vn">Ho chi minh</option>
+               </select>
+           </div>
+           <h1>Thanh pho: <span class="city">Hanoi</span>,<span class="country">Vn</span></h1>
+           <h2>Nhiet do: <span class="temp">20</span><sup>o</sup>C</h2>
+           <h2>Do am: <span class="hump">70</span>%</h2>
+           <h2>Toc do gio: <span class="wind">20</span>km/h</h2>
+           <h2>Toa do: <span class="lat">20</span>-<span class="long">20</span></h2>
+       </div>
+    </section>
+    <section class="col-md-12">
+        <div class="container">
+            <div id="map"></div>
+        </div>
+    </section>
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $("select[name=city]").bind("change",getWeather);
+        function getWeather() {
+            var city = $("select[name=city]").val();
+            $.ajax(
+            {
+                url:"http://api.openweathermap.org/data/2.5/weather",
+                method:"get",
+                data:{
+                    q:city,
+                    appid:"09a71427c59d38d6a34f89b47d75975c",
+                    units:"metric"
+                },
+                success:function (rs){
+                    var tp = rs.name;
+                    $(".city").text(tp);
+                    var qg = rs.sys.country;
+                    $(".country").text(qg);
+                    $(".temp").text(rs.main.temp);
+                    $(".hump").text(rs.main.humidity);
+                    $(".wind").text(rs.wind.speed);
+                    $(".lat").text(rs.coord.lat);
+                    $(".long").text(rs.coord.lon);
+                }
+            })
+        }
+        getWeather();
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+            });
+        }
+    </script>
+</body>
+</html>

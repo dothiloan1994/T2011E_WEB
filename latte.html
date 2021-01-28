@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LATTE</title>
+    <link rel="stylesheet" href="css/coffee_detail.css">
+    <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/owlcarosel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarosel/owl.theme.default.min.css">
+</head>
+<body onload="changeprice('sizeS')">
+<script type="text/javascript" src="js/coffee.js"></script>
+<section class="header section">
+    <div class="logo">
+
+    </div>
+    <div class="">
+
+    </div>
+</section>
+<section class="col-md-12 main section">
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <div class="detail">
+                    <div class="title">
+                        <h1>LATTE</h1>
+                    </div>
+                    <div class="content">
+                        <img src="imgs/latte.jpg"/>
+                        <div class="description">
+                            <p>Khi chuẩn bị Latte, cà phê Espresso và sữa nóng được trộn lẫn vào nhau, bên trên vẫn là lớp foam nhưng mỏng và nhẹ hơn Cappucinno.
+                                Bản thân 1 tách Latte ngon sẽ được làm từ lớp nền Espresso hảo hạng cùng lớp crema xốp nhẹ, kết hợp với liều lượng sữa nóng được căn chuẩn.
+                                Một tách Latte như vậy thôi cũng đã gửi gắm được đầy đủ trải nghiệm về hương vị và mùi vị rồi, nên rất nhiều Barista trên thế giới vẫn đang tranh cãi liệu sự xuất hiện của Latte art có cần thiết hay không?
+                                Thực tế Latte art chỉ là một yếu tố "thêm", không ảnh hưởng đến hương vị.</p>
+                            <!--                                <div class="form-group">-->
+                            <!--                                    <button type="submit" class="btn btn-danger purchaseButton"><p>MUA NGAY</p></button>-->
+                            <!--                                </div>-->
+                            <p>Gọi điện đặt hàng : <a class="textBig" href="tel:123-456-7890">123-456-7890</a></p>
+                            <table class="select">
+                                <tr>
+                                    <td>Size</td>
+                                    <td class="space">:</td>
+                                    <td class="size" id="sizeS" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">S</td>
+                                    <td class="space"></td>
+                                    <td class="size" id="sizeM" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">M</td>
+                                    <td class="space"></td>
+                                    <td class="size" id="sizeL" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">L</td>
+                                </tr>
+                            </table>
+                            <table class="select textBig">
+                                <tr>
+                                    <td>Giá</td>
+                                    <td class="space">:</td>
+                                    <td id="price"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="col-md-12 section">
+    <div class="container">
+        <div class="row">
+            <div class="suggest">
+                <div class="title">
+                    <h1>Có thể bạn thích</h1>
+                </div>
+                <div class="underline">
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="suggestproduct">
+                        <a href="bacsiu.html">
+                            <img src="imgs/bacsiu.jpg" title="Bacsiu" alt="Bacsiu"/>
+                            <h4 class="proinfo">BẠC SỈU</h4>
+                        </a>
+                    </div>
+                    <div class="suggestproduct">
+                        <a href="cappuccino.html">
+                            <img src="imgs/cappuccino.jpg" />
+                            <h4 class="proinfo">CAPPUCCINO</h4>
+                        </a>
+                    </div>
+                    <div class="suggestproduct">
+                        <a href="latte.html">
+                            <img src="imgs/latte.jpg" />
+                            <h4 class="proinfo">LATTE</h4>
+                        </a>
+                    </div>
+                    <div class="suggestproduct">
+                        <a href="traxoai.html">
+                            <img src="imgs/tra_xoai_macchiato.jpg" />
+                            <h4 class="proinfo">TRÀ XOÀI MACCHIATO</h4>
+                        </a>
+                    </div>
+                    <div class="suggestproduct">
+                        <a href="tralai.html">
+                            <img src="imgs/tra_lai_macchiato.jpg" />
+                            <h4 class="proinfo">TRÀ LÀI MACCHIATO</h4>
+                        </a>
+                    </div>
+                    <div class="suggestproduct">
+                        <a href="trasuakhoaimon.html">
+                            <img src="imgs/ts-khoai-mon.jpg" />
+                            <h4 class="proinfo">TRÀ SỮA KHOAI MÔN</h4>
+                        </a>
+                    </div>
+                    <div class="suggestproduct">
+                        <a href="trasuavietquoc.html">
+                            <img src="imgs/sinh-to-viet-quoc.jpg" />
+                            <h4 class="proinfo">SINH TỐ VIỆT QUẤT</h4>
+                        </a>
+                    </div>
+                    <div class="suggestproduct">
+                        <a href="sinhtocamxoai.html">
+                            <img src="imgs/sinh_to_cam_xoai.jpg" />
+                            <h4 class="proinfo">SINH TỐ CAM XOÀI</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="section footer">
+        <div class="cover-footer">
+            <div class="container">
+                <div class="footertop">
+                    <div class="namestore">
+                        <img src="imgs/logo6.png" height="226" width="250"/>
+                        <h1>PLL'S COFFEE</h1>
+                    </div>
+                    <div class="listaddress">
+                        <h2>chuỗi cửa hàng PLL'S COFFEE</h2>
+                        <ol>
+                            <li>Số 300 Kim Mã, Q.Ba Đình, Tp.Hà Nội</li>
+                            <li>Số 334 Nguyễn Trãi, Q.Thanh Xuân, Tp.Hà Nội</li>
+                            <li>Số 01 Tràng Tiền, Q.Hoàn Kiếm, Tp.Hà Nội</li>
+                            <li>Số 30 Hoàng Diệu, Q.Ba Đình, Tp.Hà Nội</li>
+                            <li>Trụ Sở Văn Phòng: Số 08  Tôn Thất Tuyết, Q.Cầu Giấy, Tp.Hà Nội</li>
+                            <li>Hỗ Trợ: 19001000</li>
+
+                        </ol>
+                    </div>
+                    <div class="connect"><h2> LIÊN HỆ</h2>
+                        <ul>
+                            <li><i class="fas fa-tty"></i></li>
+                            <li><i class="fas fa-envelope"></i></li>
+                            <li><i class="fab fa-internet-explorer"></i></li>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-linkedin-in"></i></li>
+                            <li><i class="fas fa-share-alt"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerunder">
+                    <p>Copyright © 2020 The Coffee House. All rights reserved.</p>
+                    <div><span>Privacy Policy</span><span>Terms of Use</span></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="libs/jquery/jquery-3.5.1.min.js"></script>
+<script src="libs/owlcarosel/owl.carousel.min.js"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -34,7 +34,7 @@ body{
     width: 500px;
 }
 .sidebar{
-    float: left;
+    float: right;
     width: calc(33.33% - 15px);
     margin-left: 15px;
 }
@@ -118,4 +118,5 @@ body{
 }
 .block.first{
     background-color: #000000;
+    color:white;
 }

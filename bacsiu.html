@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BẠC SỈU</title>
+    <link rel="stylesheet" href="css/coffee_detail.css">
+    <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/owlcarosel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarosel/owl.theme.default.min.css">
+</head>
+<body onload="changeprice('sizeS')">
+    <script type="text/javascript" src="js/coffee.js"></script>
+    <section class="header section">
+        <div class="logo">
+
+        </div>
+        <div class="">
+
+        </div>
+    </section>
+    <section class="col-md-12 main section">
+        <div class="container">
+            <div class="row">
+                <div class="center">
+                    <div class="detail">
+                        <div class="title">
+                            <h1>BẠC SỈU</h1>
+                        </div>
+                        <div class="content">
+                            <img src="imgs/bacsiu.jpg"/>
+                            <div class="description">
+                                <p>Theo chân những người gốc Hoa đến định cư tại Sài Gòn, Bạc sỉu là cách gọi tắt của "Bạc tẩy sỉu phé" trong tiếng Quảng Đông.
+                                    Bạc sỉu chính là "Ly sữa trắng kèm một chút cà phê".
+                                    Người lao động phổ thông khi xưa dùng sữa đặc pha với nước nóng để thay thế cho sữa tươi đắt đỏ trong thời điểm ấy. Tuy vậy, vị sữa đặc pha khá nồng, nên họ biến tấu chút cà phê vào cho ly sữa thêm thơm và hấp dẫn.
+                                    Người Sài Gòn "chánh hiệu con mèo đen" dùng Bạc sỉu nóng. Theo thời gian, người ta thêm đá vào ly sữa-cà-phê này để thưởng thức được cả trong những ngày oi bức.</p>
+<!--                                <div class="form-group">-->
+<!--                                    <button type="submit" class="btn btn-danger purchaseButton"><p>MUA NGAY</p></button>-->
+<!--                                </div>-->
+                                <p>Gọi điện đặt hàng : <a class="textBig" href="tel:123-456-7890">123-456-7890</a></p>
+                                <table class="select">
+                                    <tr>
+                                        <td>Size</td>
+                                        <td class="space">:</td>
+                                        <td class="size" id="sizeS" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">S</td>
+                                        <td class="space"></td>
+                                        <td class="size" id="sizeM" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">M</td>
+                                        <td class="space"></td>
+                                        <td class="size" id="sizeL" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">L</td>
+                                    </tr>
+                                </table>
+                                <table class="select textBig">
+                                    <tr>
+                                        <td>Giá</td>
+                                        <td class="space">:</td>
+                                        <td id="price"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="col-md-12 section">
+        <div class="container">
+            <div class="row">
+                <div class="suggest">
+                    <div class="title">
+                        <h1>Có thể bạn thích</h1>
+                    </div>
+                    <div class="underline">
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="suggestproduct">
+                            <a href="bacsiu.html">
+                                <img src="imgs/bacsiu.jpg" title="Bacsiu" alt="Bacsiu"/>
+                                <h4 class="proinfo">BẠC SỈU</h4>
+                            </a>
+                        </div>
+                        <div class="suggestproduct">
+                            <a href="cappuccino.html">
+                                <img src="imgs/cappuccino.jpg" />
+                                <h4 class="proinfo">CAPPUCCINO</h4>
+                            </a>
+                        </div>
+                        <div class="suggestproduct">
+                            <a href="latte.html">
+                                <img src="imgs/latte.jpg" />
+                                <h4 class="proinfo">LATTE</h4>
+                            </a>
+                        </div>
+                        <div class="suggestproduct">
+                            <a href="traxoai.html">
+                                <img src="imgs/tra_xoai_macchiato.jpg" />
+                                <h4 class="proinfo">TRÀ XOÀI MACCHIATO</h4>
+                            </a>
+                        </div>
+                        <div class="suggestproduct">
+                            <a href="tralai.html">
+                                <img src="imgs/tra_lai_macchiato.jpg" />
+                                <h4 class="proinfo">TRÀ LÀI MACCHIATO</h4>
+                            </a>
+                        </div>
+                        <div class="suggestproduct">
+                            <a href="trasuakhoaimon.html">
+                                <img src="imgs/ts-khoai-mon.jpg" />
+                                <h4 class="proinfo">TRÀ SỮA KHOAI MÔN</h4>
+                            </a>
+                        </div>
+                        <div class="suggestproduct">
+                            <a href="trasuavietquoc.html">
+                                <img src="imgs/sinh-to-viet-quoc.jpg" />
+                                <h4 class="proinfo">SINH TỐ VIỆT QUẤT</h4>
+                            </a>
+                        </div>
+                        <div class="suggestproduct">
+                            <a href="sinhtocamxoai.html">
+                                <img src="imgs/sinh_to_cam_xoai.jpg" />
+                                <h4 class="proinfo">SINH TỐ CAM XOÀI</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer section">
+
+    </section>
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="libs/owlcarosel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PLL's Coffee</title>
+    <link rel="stylesheet" href="css/coffee_detail.css">
+    <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+</head>
+<body onload="changeprice('sizeS')">
+    <script type="text/javascript" src="js/coffee.js"></script>
+    <section class="header section">
+        <div class="logo">
+
+        </div>
+        <div class="">
+
+        </div>
+    </section>
+    <section class="col-md-12 main section">
+        <div class="container">
+            <div class="row">
+                <div class="center">
+                    <div class="detail">
+                        <div class="title">
+                            <h1>Freeze Trà Xanh</h1>
+                        </div>
+                        <div class="content">
+                            <img src="imgs/trasuachantraumaca.jpg"/>
+                            <div class="description">
+                                <p>Thức uống rất được ưa chuộng. Trà xanh thượng hạng từ cao nguyên Việt Nam, kết hợp cùng đá xay, thạch trà dai dai thơm ngon và một lớp kem dày phủ lên trên vô cùng hấp dẫn. Freeze trà xanh thơm ngon, mát lạnh chinh phục bất cứ ai!</p>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger purchaseButton"><p>MUA NGAY</p></button>
+                                </div>
+                                <p>Hoặc gọi đến số điện thoại bên dưới đặt hàng: </p>
+                                <a href="tel:123-456-7890">123-456-7890</a>
+                                <table class="select">
+                                    <tr>
+                                        <td>Size</td>
+                                        <td class="space">:</td>
+                                        <td class="size" id="sizeS" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">S</td>
+                                        <td class="space"></td>
+                                        <td class="size" id="sizeM" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">M</td>
+                                        <td class="space"></td>
+                                        <td class="size" id="sizeL" onclick="changeprice(this.id)" onmouseover="onmouseoverSize(this.id)" onmouseout="onmouseoutSize(this.id)">L</td>
+                                    </tr>
+                                </table>
+                                <table class="select">
+                                    <tr>
+                                        <td>Giá</td>
+                                        <td class="space">:</td>
+                                        <td id="price"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="title">
+                            <h1>Có thể bạn thích</h1>
+                        </div>
+                        <div class="underline">
+                        </div>
+                        <div class="suggestproduct">
+                            <div class="proinfo">
+                                <a href="#"><img class="productimgs" src="imgs/trasuachantraumaca.jpg" /></a>
+                                <a href="#"><h4>BẠC SỈU</h4></a>
+                                <p>Giá: 39,000 VND</p>
+                            </div>
+                            <div class="proinfo">
+                                <a href="#"><img class="productimgs" src="imgs/trasuachantraumaca.jpg" /></a>
+                                <a href="#"><h4>BẠC SỈU</h4></a>
+                                <p>Giá: 39,000 VND</p>
+                            </div>
+                            <div class="proinfo">
+                                <a href="#"><img class="productimgs" src="imgs/trasuachantraumaca.jpg" /></a>
+                                <a href="#"><h4>BẠC SỈU</h4></a>
+                                <p>Giá: 39,000 VND</p>
+                            </div>
+                            <div class="proinfo">
+                                <a href="#"><img class="productimgs" src="imgs/trasuachantraumaca.jpg" /></a>
+                                <a href="#"><h4>BẠC SỈU</h4></a>
+                                <p>Giá: 39,000 VND</p>
+                            </div>
+                            <div class="proinfo">
+                                <a href="#"><img class="productimgs" src="imgs/trasuachantraumaca.jpg" /></a>
+                                <a href="#"><h4>BẠC SỈU</h4></a>
+                                <p>Giá: 39,000 VND</p>
+                            </div>
+                            <div class="proinfo">
+                                <a href="#"><img class="productimgs" src="imgs/trasuachantraumaca.jpg" /></a>
+                                <a href="#"><h4>BẠC SỈU</h4></a>
+                                <p>Giá: 39,000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer section">
+
+    </section>
+</body>
+</html>

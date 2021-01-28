@@ -1,0 +1,49 @@
+div{
+    float:left;/*don ve phia màn hinh ben trai*/
+    width: calc(25% - 40px);
+    /*height: 150px;*/
+    border: 1px solid #222222;
+    padding: 15px 20px; /*padding-top padding-left padding-bottom padding-right khoang cach so voi border*/
+    margin: 20px;/*khoang cach voi thang ben */
+    box-sizing: border-box;/*kich thuoc cua khoi tinh tu border box vao-> truong hop ko du thi kich thuoc content trong khoi tu thu nho vao*/
+    box-shadow: 0px 5px 5px #aaaaaa;
+    border-radius: 10px;/*100% border vuong tron elip*/
+    display: block;/*none*/
+    opacity: 0.7;/*do trong suot, so luong diem anh -> giam di thi mo di*/
+    transition: all 300ms /*background-color 300ms,opacity 300ms;*/
+}
+div:hover{
+    background-color: #35a5ef;
+    opacity: 1;
+}
+img{
+    max-width: 100%;
+}
+#first{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.aqua{
+    background-color: aquamarine;
+}
+/*div #ppx*/
+/*#ppx*/
+/*body div .pp*/
+
+div .pp{
+
+}
+.pp{
+    color:yellow;
+}
+body div p{
+    color:yellow;
+}
+div p{
+    color:yellow;
+}
+p{
+    color:yellow !important;
+}

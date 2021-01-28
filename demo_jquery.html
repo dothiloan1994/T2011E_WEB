@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jquery</title>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+
+</head>
+<body>
+    <section class="col-md-12">
+        <div class="container">
+            <h1 id="head">Tieu de trang</h1>
+            <p class="blog">Nhung cam xuc ca nha</p>
+            <p class="blog">Vat lieu thep dung cho goi cau tuyen</p>
+            <form action ="#" method="get">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" name="email" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input class="form-control" name="username" placeholder="Email"/>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        //var h = document.getElementById("head");
+        //h.style.color="red";
+        var hj=$("head");
+        hj.css("color","red");
+
+        //var barr = document.getElementsByClassName("blog");
+        //for(var i =0;i<barr.length;i++){
+          //  barr[i].style.color="green";
+        //}
+        var ba = $(".blog");
+        ba.css("color","violet");
+        console.log(hj);
+        console.log(ba);
+        var ip = $("input[name=email]");
+        ip.css("color","orange");
+
+        ba.css({
+            "color":"green",
+            "background-color":"yellow",
+            "margin":"20px"
+        });
+
+        // them 1 class
+        ba.addClass("hello");
+        // xoa class
+        ba.removeClass("hello");
+        ba.hasClass("hello");
+        if(ba.hasClass("blog")){
+            ba.addClass("xinchao");
+        }
+        var txt = ba.text();
+        console.log(txt);
+        ba.text("xinchao doan van bi chinh sua");
+
+        var ht = ba.html();
+        console.log(ht);
+       // ba.html("<a href='http://google.com'>Truy cap google</a>");
+        ba.append("<a href='http://google.com'>Truy cap google</a>");
+        ba.prepend("<a href='http://google.com'>Truy cap google</a>");
+    </script>
+</body>
+</html>
