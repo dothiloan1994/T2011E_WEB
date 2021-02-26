@@ -29,7 +29,8 @@
 }
 .search p{
     color: red;
-    margin-left: 120px;
+    float: right;
+    margin-right: 0px;
 }
 .headerMenu{
     background-color: #9da337;
@@ -101,7 +102,7 @@
     float: left;
     background-color: white;
     width: 35%;
-    padding-bottom: 90px;
+    padding-bottom: 110px;
 }
 .showcaseSearch{
     margin-top: 10px;
@@ -122,6 +123,36 @@
     border-bottom: grey;
 }
 .formRight{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
+}
+.searchbutton{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+}
+.footer {
+    background-color: #e1d3b4;
+    /*height: 50px;*/
+    box-sizing: content-box;
+    padding-bottom: 5px;
+}
+.footer img{
+    float: right;
+    margin-right: 15px;
+}
+.termLogo{
+    float: left;
+}
+.termLogo span{
+    float: left;
+    margin-left: 10px;
+}
+.text{
+    margin-left: 450px;
+    margin-top: 20px;
+}
+.termLogo span a{
+    color: red;
+    text-decoration: none;
 }
