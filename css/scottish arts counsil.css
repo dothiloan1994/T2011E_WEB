@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    float:left;
+    width: 100%;
+    /*background-color: #fafafa;*/
+}
+.header{
+    float:left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.logo{
+    margin-left: 50px;
+    height: 70px;
+}
+.search{
+    float: right;
+    margin-right: 50px;
+}
+.search button{
+    color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search p{
+    color: red;
+    margin-left: 120px;
+}
+.headerMenu{
+    background-color: #9da337;
+    float:left;
+    width: calc(100% - 20px);
+    margin-right: 20px;
+}
+.headerMenu ul{
+    float: right;
+    margin-right: 20px;
+}
+.headerMenu li{
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+}
+.headerMenu li a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    float: left;
+    width: calc(100% - 20px);
+    background-color: #e1d3b4;
+}
+.left{
+    width: 15%;
+    float: left;
+    padding-bottom: 150px;
+}
+.sidebarMenu{
+    height: 30px;
+    margin-top: 2px;
+    background-color: #e1d3b4;
+}
+.sidebarMenu:hover {
+    background-color: #d0d495;
+}
+.blank{
+    height: 2px;
+    background-color: white;
+}
+.left li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+.center{
+    width: 85%;
+    float: left;
+    background-color: #ebedd7;
+}
+.bodyContent{
+    float: left;
+    width: 65%;
+    padding-bottom: 150px;
+}
+.flashimg{
+    width: 800px;
+}
+.detail{
+    margin-left: 20px;
+    margin-top:20px;
+}
+.detail p{
+    margin-top: 20px;
+}
+.right{
+    float: left;
+    background-color: white;
+    width: 35%;
+    padding-bottom: 90px;
+}
+.showcaseSearch{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #ebedd7;
+}
+.titleSearch{
+    background-color: #daddd4;
+    height: 50px;
+}
+.titleSearch p{
+    padding-top: 16px;
+    margin-left: 10px;
+}
+.right img{
+    width: 350px;
+    margin-bottom: 50px;
+    border-bottom: grey;
+}
+.formRight{
+    margin-top: 50px;
+    margin-left: 10px;
+}
